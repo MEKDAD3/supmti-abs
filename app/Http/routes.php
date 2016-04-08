@@ -26,8 +26,8 @@ Route::any('/addStudent',[
     'as' => 'addSt',
     'uses' => 'StudentController@addStudent'
 ]);
-Route::any('/AllStudents.json',[
-    'as' => 'AllSt',
+Route::any('/allStudents.json',[
+    'as' => 'allSt',
     'uses' => 'StudentController@AllStudents'
 ]);
 

@@ -128,6 +128,7 @@
 	</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script src="/supmti-Gabsence/resources/views/supmti/app.js"></script>
+	<script src="/supmti-Gabsence/resources/views/supmti/StudentController.js"></script>
 	
 </body>
 

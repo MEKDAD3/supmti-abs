@@ -20,7 +20,7 @@ sampleApp.config(['$routeProvider',
       }).
 	      when('/addforms', {
         templateUrl: '/supmti-Gabsence/resources/views/supmti/pages/forms.html',
-        controller: 'formsController'
+        controller: 'formtCtrl'
       }).
 	      when('/addpanels', {
         templateUrl: '/supmti-Gabsence/resources/views/supmti/pages/panels.html',
