@@ -14,9 +14,17 @@ sampleApp.controller('formtCtrl', ['$scope', '$http',
             var student = {
                 "nom" : $scope.nom,
                 "prenom" : $scope.prenom,
-                "cni" : $scope.cni,
-                "cne" : $scope.cne,
+                "dateN" : $scope.dateN,
+                "lieuN" : $scope.lieuN,
                 "tel" : $scope.tel,
+                "email" : $scope.email,
+                "situationFam" : $scope.situationFam,
+                "nomT" : $scope.nomT,
+                "adresseT" : $scope.adresseT,
+                "teleF" : $scope.teleF,
+                "profPere" : $scope.profPere,
+                "profMere" : $scope.profMere,
+                "photo" : $scope.photo,
                 "adresse" : $scope.adresse
             };
             var res = $http.post('http://localhost/supmti-Gabsence/public/addStudent', student);
