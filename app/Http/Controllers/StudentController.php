@@ -14,16 +14,11 @@ class StudentController extends Controller {
         return View("student/add_student");
     }
 
-    function addStudent(Request $request) {
-        $params = $request->all();
-        Students::create($params);
-        //return redirect()->back();
-    }
 
-    /*function AllStudents(Request $request) {
+    function addStudent(Request $request) {
         Students::create($request->json()->all());
         return $request->json()->all();
-    }*/
+    }
     function AllStudents() {
         $students = DB::collection('students')->get();
         return response()->json($students);

@@ -6,9 +6,9 @@ sampleApp.config(['$routeProvider',
         templateUrl: '/supmti-Gabsence/resources/views/supmti/pages/home.html',
         controller: 'HomeController'
     }).
-      when('/addwiggets', {
-        templateUrl: '/supmti-Gabsence/resources/views/supmti/pages/widgets.html',
-        controller: 'widgetsController'
+      when('/students', {
+        templateUrl: '/supmti-Gabsence/resources/views/supmti/pages/students.html',
+        controller: 'StudentController'
       }).
 	  when('/addcharts', {
         templateUrl: '/supmti-Gabsence/resources/views/supmti/pages/charts.html',

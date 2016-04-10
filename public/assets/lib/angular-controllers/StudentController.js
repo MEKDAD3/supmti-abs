@@ -1,5 +1,5 @@
 
-sampleApp.controller('formtCtrl', ['$scope', '$http',
+sampleApp.controller('StudentController', ['$scope', '$http',
     function ($scope, $http) {
 
         var resget = $http.get('http://localhost/supmti-Gabsence/public/allStudents.json');

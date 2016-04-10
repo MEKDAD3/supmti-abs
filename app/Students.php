@@ -7,6 +7,7 @@ use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 class Students extends Eloquent
 {
     //
+    protected $connection = 'mongodb';
     protected $collection = 'students';
-    protected $fillable = ['nom','prenom','photo','dateNaiss','lieuNaiss','adresse','telephone','email','situation','nomTuteur','adresseTuteur','telephoneFixe','professionPere','professionMere'];
+    protected $fillable = ['nom','prenom','photo','dateN','lieuN','adresse','tel','email','situationFam','nomT','adresseT','teleF','profPere','profMere'];
 }

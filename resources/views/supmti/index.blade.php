@@ -5,16 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Lumino - Dashboard</title>
 
-	<link href="/supmti-Gabsence/resources/views/supmti/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/supmti-Gabsence/resources/views/supmti/css/datepicker3.css" rel="stylesheet">
-	<link href="/supmti-Gabsence/resources/views/supmti/css/styles.css" rel="stylesheet">
-	<link href="/supmti-Gabsence/resources/views/supmti/css/bootstrap-table.css" rel="stylesheet">
-	<script src="/supmti-Gabsence/resources/views/supmti/js/lumino.glyphs.js"></script>
+	<link href="{{ URL::asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+	<link href="{{ URL::asset('assets/css/datepicker3.css') }}" rel="stylesheet">
+	<link href="{{ URL::asset('assets/css/styles.css') }}" rel="stylesheet">
+	<link href="{{ URL::asset('assets/css/bootstrap-table.css') }}" rel="stylesheet">
+	<script src="{{ URL::asset('assets/js/lumino.glyphs.js') }}"></script>
 	
 
 	<!--[if lt IE 9]>
-	<script src="/supmti-Gabsence/resources/views/supmti/js/html5shiv.js"></script>
-	<script src="/supmti-Gabsence/resources/views/supmti/js/respond.min.js"></script>
+	<script src="{{ URL::asset('assets/js/html5shiv.js') }}"></script>
+	<script src="{{ URL::asset('assets/js/respond.min.js') }}"></script>
 	<![endif]-->
 
 </head>
@@ -47,7 +47,7 @@
 		
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
 		<div class="col-lg-offset-1">
-			<img src="/supmti-Gabsence/resources/views/supmti/img/logo.png" class="img-responsive img_logo">
+			<img src="{{ URL::asset('assets/img/logo.png') }}" class="img-responsive img_logo">
 		</div>
 		<!--<form role="search">
 			<div class="form-group">
@@ -56,7 +56,7 @@
 		</form>-->
 		<ul class="nav menu">
 			<li class="active"><a href="#"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Dashboard</a></li>
-			<li><a href="#addwiggets" class="clickMenu"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> Etudiant</a></li>
+			<li><a href="#students" class="clickMenu"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> Etudiants</a></li>
 			<li><a href="#addcharts" class="clickMenu"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Prof</a></li>
 			<li><a href="#addtables" class="clickMenu"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg> Modules</a></li>
 			<li><a href="#addforms" class="clickMenu"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Salarier</a></li>
@@ -99,14 +99,14 @@
 		</div>
 	</footer>
 
-	<script src="/supmti-Gabsence/resources/views/supmti/js/bootstrap-table.js"></script>
-	<script src="/supmti-Gabsence/resources/views/supmti/js/jquery-1.11.1.min.js"></script>
-	<script src="/supmti-Gabsence/resources/views/supmti/js/bootstrap.min.js"></script>
-	<script src="/supmti-Gabsence/resources/views/supmti/js/chart.min.js"></script>
-	<script src="/supmti-Gabsence/resources/views/supmti/js/chart-data.js"></script>
-	<script src="/supmti-Gabsence/resources/views/supmti/js/easypiechart.js"></script>
-	<script src="/supmti-Gabsence/resources/views/supmti/js/easypiechart-data.js"></script>
-	<script src="/supmti-Gabsence/resources/views/supmti/js/bootstrap-datepicker.js"></script>
+	<script src="{{ URL::asset('assets/js/jquery-1.11.1.min.js') }}"></script>
+	<script src="{{ URL::asset('assets/js/bootstrap.min.js') }}"></script>
+	<script src="{{ URL::asset('assets/js/bootstrap-table.js') }}"></script>
+	<script src="{{ URL::asset('assets/js/chart.min.js') }}"></script>
+	<script src="{{ URL::asset('assets/js/chart-data.js') }}"></script>
+	<script src="{{ URL::asset('assets/js/easypiechart.js') }}"></script>
+	<script src="{{ URL::asset('assets/js/easypiechart-data.js') }}"></script>
+	<script src="{{ URL::asset('assets/js/bootstrap-datepicker.js') }}"></script>
 	
 	<script>
 		$('#calendar').datepicker({
@@ -127,8 +127,8 @@
 		})
 	</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-    <script src="/supmti-Gabsence/resources/views/supmti/app.js"></script>
-	<script src="/supmti-Gabsence/resources/views/supmti/StudentController.js"></script>
+    <script src="{{ URL::asset('assets/lib/app.js') }}"></script>
+	<script src="{{ URL::asset('assets/lib/angular-controllers/StudentController.js') }}"></script>
 	
 </body>
 
