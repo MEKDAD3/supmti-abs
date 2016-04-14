@@ -23,6 +23,15 @@ class StudentController extends Controller {
         $students = DB::collection('students')->get();
         return response()->json($students);
     }
+    function findStudentById(Request $request) {
+
+    }
+    function updateStudent(Request $request) {
+
+    }
+    function deleteStudent(Request $request) {
+
+    }
 
 
 }

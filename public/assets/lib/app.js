@@ -10,17 +10,17 @@ sampleApp.config(['$routeProvider',
         templateUrl: '/supmti-Gabsence/resources/views/supmti/pages/students.html',
         controller: 'StudentController'
       }).
-	  when('/addcharts', {
-        templateUrl: '/supmti-Gabsence/resources/views/supmti/pages/charts.html',
-        controller: 'chartsController'
+	  when('/profs', {
+        templateUrl: '/supmti-Gabsence/resources/views/supmti/pages/profs.html',
+        controller: 'profsController'
       }).
-	      when('/addtables', {
-        templateUrl: '/supmti-Gabsence/resources/views/supmti/pages/tables.html',
-        controller: 'tablesController'
+	      when('/modules', {
+        templateUrl: '/supmti-Gabsence/resources/views/supmti/pages/modules.html',
+        controller: 'modulesController'
       }).
-	      when('/addforms', {
-        templateUrl: '/supmti-Gabsence/resources/views/supmti/pages/forms.html',
-        controller: 'formtCtrl'
+	      when('/salarier', {
+        templateUrl: '/supmti-Gabsence/resources/views/supmti/pages/salarier.html',
+        controller: 'salarierController'
       }).
 	      when('/addpanels', {
         templateUrl: '/supmti-Gabsence/resources/views/supmti/pages/panels.html',
